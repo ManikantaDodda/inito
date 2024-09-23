@@ -1,6 +1,19 @@
 import React from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./whyisit.css";
 
 function WhyIsIt() {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 300000,
+    };
     return (
         <section class="why-inito-is-smarter-way">
             <section class="why-measure-progesterone">
@@ -70,76 +83,58 @@ function WhyIsIt() {
                     </picture>
 
                     <div class="fertility-card-carousel slick-initialized slick-slider">
-                        <div className="slick-track" style={{ opacity: 1, width: '2404px' }}>
+                        <Slider {...settings} className="slick-track" style={{ opacity: 1, width: '2404px' }}>
+                        <div>
                             <img
+                                className="whyits_carousel1"
                                 alt="smart"
                                 src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/why_inito_is_smarter_way/high_fertility-277405f0c3b1f844907885a9866aac272ff865c0ed3431d0a7f5673b2440b21e.svg"
-                                className="slick-slide"
-                                data-slick-index="0"
-                                aria-hidden="true"
-                                tabIndex="-1"
                                 style={{
-                                    width: '547px',
+                                    width: '321px',
                                     position: 'relative',
-                                    left: '0px',
-                                    top: '0px',
-                                    zIndex: 998,
-                                    opacity: 0,
-                                    transition: 'opacity 500ms',
+                                    left : "-50px",
+                                    right : "0px"
                                 }}
-                            />
-                            <img
-                                alt="smart"
-                                src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/why_inito_is_smarter_way/peak_fertility-21ac68f7f91f18f7e76b83c05e0eefec17e26037a254311312b59c3606bb952a.svg"
-                                className="slick-slide"
-                                data-slick-index="1"
-                                aria-hidden="true"
-                                tabIndex="0"
-                                style={{
-                                    width: '547px',
-                                    position: 'relative',
-                                    left: '-601px',
-                                    top: '0px',
-                                    zIndex: 998,
-                                    opacity: 0,
-                                    transition: 'opacity 500ms',
-                                }}
-                            />
-                            <img
-                                alt="smart"
-                                src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/why_inito_is_smarter_way/ovulation_confirmed-1af13f574905b54b0614d422f2161aebbdebd85d6cd39cb6ae2078706ba42642.svg"
-                                className="slick-slide slick-current slick-active"
-                                data-slick-index="2"
-                                aria-hidden="false"
-                                tabIndex="-1"
-                                style={{
-                                    width: '547px',
-                                    position: 'relative',
-                                    left: '-1202px',
-                                    top: '0px',
-                                    zIndex: 1000,
-                                    opacity: 1,
-                                    transition: 'opacity 500ms',
-                                }}
-                            />
-                            <img
-                                alt="smart"
-                                src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/why_inito_is_smarter_way/low_fertility-51402a5906afd6879626e776235fbb7cbbe84d94529366f7266c51f4d3b406ab.svg"
-                                className="slick-slide"
-                                data-slick-index="3"
-                                aria-hidden="true"
-                                tabIndex="-1"
-                                style={{
-                                    width: '547px',
-                                    position: 'relative',
-                                    left: '-1803px',
-                                    top: '0px',
-                                    zIndex: 998,
-                                    opacity: 0,
-                                    transition: 'opacity 500ms',
-                                }}
+                                   
                             />
                         </div>
+                        <div>
+                            <img
+                             className="whyits_carousel2"
+                                alt="smart"
+                                src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/why_inito_is_smarter_way/peak_fertility-21ac68f7f91f18f7e76b83c05e0eefec17e26037a254311312b59c3606bb952a.svg"
+                                style={{
+                                    width: '321px',
+                                    position: 'relative',
+                                    left:"-107px"
+                                }}
+                                />
+                        </div>
+                        <div>
+                            <img
+                             className="whyits_carousel3"
+                                alt="smart"
+                                src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/why_inito_is_smarter_way/ovulation_confirmed-1af13f574905b54b0614d422f2161aebbdebd85d6cd39cb6ae2078706ba42642.svg"
+                                style={{
+                                    width: '321px',
+                                    position: 'relative',
+                                    left:"-157px"
+                                }}
+                                />
+                        </div>
+                        <div>
+                            <img
+                             className="whyits_carousel4"
+                                alt="smart"
+                                src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/why_inito_is_smarter_way/low_fertility-51402a5906afd6879626e776235fbb7cbbe84d94529366f7266c51f4d3b406ab.svg"
+                                style={{
+                                    width: '321px',
+                                    position: 'relative',
+                                    left:"-215px"
+                                }}
+                                />
+                        </div>
+                    </Slider>
                     </div>
                 </section>
 
