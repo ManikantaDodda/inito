@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header';
+import Brands from './components/Brands';
+import Navbar from './components/Navbar';
+import Trusted from './components/Trusted';
+import Promotion from './components/Promotion';
+import Predict from './components/Predict';
+import Chart from './components/Chart';
+import WhyIsIt from './components/WhyIsIt';
+import Steps from './components/Steps';
+import UserReviewsCarousel from './components/UserReview';
+import FAQSection from './components/FAQSection';
+import Questions from './components/Questions';
+import Footer from './components/Footer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+  <Header/>
+  <Navbar/>
+  <Trusted/>
+  <Brands/>
+  <Promotion/>
+  <Predict/>
+  <Chart/>
+  <WhyIsIt/>
+  <Steps/>
+  <UserReviewsCarousel/>
+  <FAQSection/>
+  <Footer/>
+  </>
   );
 }
 
