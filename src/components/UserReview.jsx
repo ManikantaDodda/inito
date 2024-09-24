@@ -35,18 +35,21 @@ const UserReviewsCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
+    adaptiveHeight: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
   };
 
   return (
-    <section className="user-reviews" id="user-reviews-carousel">
+    <section className="user-reviews">
       <div className="review-container">
         <Slider {...settings}>
           {reviews.map((review, index) => (
             <div key={index} className="user-review">
-              <div className="user-review__card">
+              <div className="user-review__card" style={{right:`${index === 0 ? 52 : 0}px`}}>
                 <div className="user-review__rating">
                   {[...Array(review.rating)].map((_, i) => (
                     <img key={i} className="user-rating" src="https://cdn.inito.com/inito_website/star.png" alt="Star" />

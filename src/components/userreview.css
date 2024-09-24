@@ -368,4 +368,26 @@
       line-height: 25px;
     }
     }
+
+
+.slick-dots li button:before {
+content: "\2022";
+color: #CFD5D7;
+font-weight: bold;
+display: inline-block;
+font-size: 0.6rem;
+position: absolute;
+left: -1em;
+top: -3px;
+width: 8px;
+height: 8px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.slick-dots li.slick-active button:before {
+  color: #1F94AA;
+
+}
     

@@ -4191,7 +4191,7 @@ margin-bottom: 15px;
 line-height: 23px;
 }
 
-ul li::before {
+/* ul li::before {
 content: "\2022";
 color: #CFD5D7;
 font-weight: bold;
@@ -4201,7 +4201,7 @@ font-size: 2rem;
 position: absolute;
 left: -1em;
 top: -3px;
-}
+} */
 
 ul li:last-of-type {
 margin-bottom: 0;
