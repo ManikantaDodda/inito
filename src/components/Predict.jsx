@@ -40,7 +40,7 @@ function Predict() {
                             alt="chart" 
                             src={imagesArr[index]}  
                             className="slick-slide slick-current slick-active"
-                            style={{ width: "286px", position: "relative", left: "0px", top: "0px" }}
+                            style={{ width: "346px", position: "relative", left: "0px", top: "0px" }}
                         />
                     </div>
                 </div>
