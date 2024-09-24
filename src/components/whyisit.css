@@ -1,9 +1,7 @@
 
 @media screen and (max-width: 778px) {
-    .whyits_carousel1{
-        width: 221px;
-        position: relative;
-        left: -80px;
-        top: 390px;
+     .slick-active{
+        width: 237.7px!important;
+        left: 10px !important;
     }
 }
