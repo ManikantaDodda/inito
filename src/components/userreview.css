@@ -163,6 +163,7 @@
     
     .user-reviews .user-review__card {
       height: 250px;
+      right: 0px;
     }
     }
     
@@ -251,6 +252,7 @@
     
     .user-reviews {
       height: 550px;
+      margin-bottom: 0px;
     }
     
     .user-reviews .user-review__card {
@@ -266,6 +268,8 @@
     
     .user-reviews .user-review__card {
       height: 450px;
+      right: 0px!important;
+      margin-right: 14px!important;
     }
     }
     
@@ -330,6 +334,7 @@
     .user-reviews .user-review__card {
       height: 27vw;
       grid-template-rows: minmax(0, 0.2fr) minmax(0, 1fr);
+      right: 0px;
     }
     
     .user-reviews .user-review__rating .user-rating {
@@ -347,6 +352,13 @@
     }
     
     @media screen and (min-width: 1025px) {
+    .user-reviews .user-review__data .card-username {
+        color: #0096AD;
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 21px;
+        display: block;
+        }
     
     .user-reviews {
       display: block;
@@ -357,6 +369,7 @@
     
     .user-reviews .user-review__card {
       height: 220px;
+      right: 0px;
     }
     
     .user-reviews .user-review__rating .user-rating {

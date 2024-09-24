@@ -54,7 +54,7 @@ const UserReviewsCarousel = () => {
         <Slider {...settings}>
           {reviews.map((review, index) => (
             <div key={index} className="user-review">
-              <div className="user-review__card" style={{right:`${0}px`}}>
+              <div className="user-review__card" style={{right:`${review.right}px`}}>
                 <div className="user-review__rating">
                   {[...Array(review.rating)].map((_, i) => (
                     <img key={i} className="user-rating" src="https://cdn.inito.com/inito_website/star.png" alt="Star" />
