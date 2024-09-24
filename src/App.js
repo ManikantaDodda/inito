@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/Header';
 import Brands from './components/Brands';
-import Navbar from './components/Navbar';
 import Trusted from './components/Trusted';
 import Promotion from './components/Promotion';
 import Predict from './components/Predict';
@@ -16,7 +15,6 @@ function App() {
   return (
   <>
   <Header/>
-  <Navbar/>
   <Trusted/>
   <Brands/>
   <Promotion/>

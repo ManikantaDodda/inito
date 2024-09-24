@@ -163,7 +163,6 @@
 
   .user-reviews .user-review__card {
     height: 250px;
-    right: 0px;
   }
 }
 
@@ -362,7 +361,6 @@
 
   .user-reviews .user-review__card {
     height: 220px;
-    right: 0px!important;
   }
 
   .user-reviews .user-review__rating .user-rating {
