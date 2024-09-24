@@ -390,4 +390,59 @@ opacity: 0px;
   color: #1F94AA;
 
 }
-    
+/* General slick-dots styling */
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  position: relative;
+}
+
+.slick-dots li button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button:before {
+  content: "\2022";
+  color: #CFD5D7;
+  font-weight: bold;
+  font-size: 0.6rem;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li:last-of-type {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .slick-dots {
+    margin-top: 10px; /* Reduce top margin for mobile */
+  }
+
+  .slick-dots li {
+    margin: 0 3px; /* Reduce spacing between dots */
+  }
+
+  .slick-dots li button:before {
+    font-size: 0.5rem; /* Reduce dot size for smaller screens */
+  }
+}
+
+/* Custom span styling for bold text (if used) */
+.slick-dots li button span {
+  font-weight: 700;
+}
