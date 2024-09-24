@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./whyisit.css";
+import smart_preg_logo from "../assets/whyits/smarter.svg";
 
 function WhyIsIt() {
     const imagesArr = ["https://dqxth8lmt6m4r.cloudfront.net/assets/v1/why_inito_is_smarter_way/low_fertility-51402a5906afd6879626e776235fbb7cbbe84d94529366f7266c51f4d3b406ab.svg",
@@ -45,24 +46,22 @@ function WhyIsIt() {
 
             <section className="blue-background">
                 <h1>Why Inito is the smarter way to get <span className="image_as_underline">pregnant</span></h1>
-
+                {/* pic */}
                 <section className="left-card">
                     <div className="text-content">
-                        <h1>Get charts and actual <span className="image_as_underline">values</span> of your <span className="inline-image">hormones
-                            <img alt="star" className="homepage-4-star" src="https://cdn.inito.com/inito_website/homepage_4_star.png" /></span></h1>
+                        <h1>Adapts to your  <br></br><span style={{color:"#1F94AA"}}>ir</span>regular Cycles</h1>
                         <div>
                             Most ovulation kits have a set value or a threshold, making them likely to give a false read if your hormones fall outside the average range.<br /><br />
                             Inito measures real values of your hormones to personalize results to the unique you.
                         </div>
-                        <a className="small-view-button" href="/buy-now">GET THE INITO KIT</a>
                     </div>
                     <picture className="card-image">
-                        <source media="(min-width:769px)" srcset="https://cdn.inito.com/inito_website/why_inito_is_smarter_way/get_charts_and_actual_values@2x.png" />
-                        <source media="(max-width:768px)" srcset="https://cdn.inito.com/inito_website/why_inito_is_smarter_way/get_charts_and_actual_values.png" />
-                        <img alt="whysmarter" src="https://cdn.inito.com/inito_website/why_inito_is_smarter_way/get_charts_and_actual_values@2x.png" />
+                        <source media="(min-width:769px)" srcset={smart_preg_logo} />
+                        <source media="(max-width:768px)" srcset={smart_preg_logo} />
+                        <img alt="whysmarter" src={smart_preg_logo} />
                     </picture>
                 </section>
-
+                {/* pic */}
                 <section className="right-card">
                     <div className="text-content">
                         <h1>Inito tracks everything so you don’t have to</h1>
@@ -93,6 +92,22 @@ function WhyIsIt() {
                             </div>
                         </div>
                     </div>
+                </section>
+                <section className="left-card">
+                    <div className="text-content">
+                        <h1>Get charts and actual <span className="image_as_underline">values</span> of your <span className="inline-image">hormones
+                            <img alt="star" className="homepage-4-star" src="https://cdn.inito.com/inito_website/homepage_4_star.png"/></span></h1>
+                        <div>
+                        Actual numerical values are necessary to know whether your PdG levels are sufficient enough to support a healthy pregnancy.
+                        Studies show that PdG levels lower than 7.9ng/ml in serum (around 10ug/ml PdG) 6-8 days after ovulation are associated with lower pregnancy outcomes.
+                        </div>
+                        <a className="small-view-button" href="/buy-now">GET THE INITO KIT</a>
+                    </div>
+                    <picture className="card-image">
+                        <source media="(min-width:769px)" srcset="https://cdn.inito.com/inito_website/why_inito_is_smarter_way/get_charts_and_actual_values@2x.png" />
+                        <source media="(max-width:768px)" srcset="https://cdn.inito.com/inito_website/why_inito_is_smarter_way/get_charts_and_actual_values.png" />
+                        <img alt="whysmarter" src="https://cdn.inito.com/inito_website/why_inito_is_smarter_way/get_charts_and_actual_values@2x.png" />
+                    </picture>
                 </section>
             </section>
         </section>
