@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Footer() {
+  const[company, setCompany] = useState(false);
+  const[support, setSupport] = useState(false);
+  const[getInTouch, setGetInTouch] = useState(false);
     return (
    <>   
    <div className="pdg-superscript v2">
@@ -49,42 +52,46 @@ function Footer() {
       </li>
     </ul>
     <div className="collapsible" id="mobile-footer-links">
-      <div className="item">
-        <div className="head">
+      <div className={`item ${company ? "active":""}`}>
+        <div className="head" onClick={()=>setCompany(!company)}>
           <h5 className="title">Company</h5>
           <img alt="arrow" src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/Icon Arrow Down-fbac066563808072fac97a64820fb3e89defb84e6eb03158df960849592ff079.svg"/>
         </div>
+        {company ? 
         <div className="body">
             <a href="/about-us">About Us</a>
             <a href="/careers">Careers</a>
             <a href="/buy-now">Blog</a>
             <a href="/contact-us">Contact Us</a>
         </div>
+        : ""}
       </div>
-      <div className="item">
-        <div className="head">
+      <div className={`item ${support ? "active":""}`}>
+        <div className="head" onClick={()=>setSupport(!support)}>
           <h5 className="title">Support</h5>
           <img alt="arrowdo" src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/Icon Arrow Down-fbac066563808072fac97a64820fb3e89defb84e6eb03158df960849592ff079.svg"/>
         </div>
+        {support ? 
         <div className="body">
           <a href="/faqs">FAQ</a>
           <a href="/terms">Terms</a>
           <a href="/privacy-policy">Privacy Policy</a>
           <a href="/replacements-and-warranty">Returns &amp; Warranty</a>
-        </div>
+        </div> : "" }
       </div>
-      <div className="item">
-        <div className="head">
+      <div className={`item ${getInTouch ? "active":""}`}>
+        <div className="head" onClick={()=>setGetInTouch(!getInTouch)}>
           <h5 className="title">Get In Touch</h5>
           <img src="https://dqxth8lmt6m4r.cloudfront.net/assets/v1/Icon Arrow Down-fbac066563808072fac97a64820fb3e89defb84e6eb03158df960849592ff079.svg"/>
         </div>
+        {getInTouch ? 
         <div className="body">
           <a href="tel:+91-9742931931">+91-9742931931</a>
           <a href="mailto:help@inito.com">help@inito.com</a>
           <li>
               2nd Floor, #44, 100 Feet Rd, Koramangala 4th Block, Bengaluru, 560034, IN
           </li>
-        </div>
+        </div> : ""}
       </div>
     </div>
     <div className="social-icon-dark">
