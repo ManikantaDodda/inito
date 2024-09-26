@@ -46,6 +46,29 @@ const UserReviewsCarousel = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+          breakpoint: 1024, // For screens wider than 1024px
+          settings: {
+              slidesToShow: 2, // Show 2 slides
+              slidesToScroll: 1
+          }
+      },
+      {
+          breakpoint: 768, // For tablets
+          settings: {
+              slidesToShow: 1, // Show 1 slide
+              slidesToScroll: 1
+          }
+      },
+      {
+          breakpoint: 480, // For mobile devices
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      }
+  ]
   };
 
   return (
