@@ -45,30 +45,7 @@ const UserReviewsCarousel = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-          breakpoint: 1024, // For screens wider than 1024px
-          settings: {
-              slidesToShow: 2, // Show 2 slides
-              slidesToScroll: 1
-          }
-      },
-      {
-          breakpoint: 768, // For tablets
-          settings: {
-              slidesToShow: 1, // Show 1 slide
-              slidesToScroll: 1
-          }
-      },
-      {
-          breakpoint: 480, // For mobile devices
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-          }
-      }
-  ]
+    autoplaySpeed: 2000
   };
 
   return (
@@ -88,6 +65,7 @@ const UserReviewsCarousel = () => {
                   <div className="card-username">{review.name}</div>
                 </div>
               </div>
+              <div className="data-username" style={{right:`${review.right-13}px`}}>{review.name}</div>
             </div>
           ))}
         </Slider>

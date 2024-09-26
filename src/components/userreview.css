@@ -95,11 +95,11 @@
 }
 
 .user-reviews .user-review .data-username {
-  margin-left: 40px;
+  margin-left: 0px;
   margin-top: 15px;
   color: #8F8F8F;
   line-height: 25px;
-  display: block;
+  display: relative;
   font-weight: 600;
 }
 
@@ -404,7 +404,7 @@
   /* General slick-dots styling */
   .slick-dots {
     /* display: flex !important; */
-    position: relative!important;
+    position: absolute!important;
     align-items: center;
     list-style: none;
     margin-top: 20px;
@@ -452,6 +452,9 @@
       font-size: 0.5rem; 
     }
     .slick-track {
+    }
+    .slick-dots {
+      position: relative!important;
     }
   }
   
